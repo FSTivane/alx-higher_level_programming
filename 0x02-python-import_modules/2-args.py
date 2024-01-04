@@ -7,13 +7,13 @@ if __name__ == "__main__":
     x = len(args)
 
     if x == 0:
-        print("0 arguments")
+        print("{:d} arguments.".format(x))
 
     elif x == 1:
-        print("1 argument:")
+        print("{:d} argument:".format(x))
 
     else:
-        print("{} arguments:".format(x))
+        print("{:d} arguments:".format(x))
 
     for i, arg in enumerate(args, 1):
         print(f"{i}: {arg}")
