@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     if x == 0:
         print("0 arguments")
-    
+ 
     elif x == 1:
         print("1 argument:")
 
@@ -16,4 +16,4 @@ if __name__ == "__main__":
         print("{} arguments:".format(x))
 
     for i, arg in enumerate(args, 1):
-            print(f"{i}: {arg}")
+        print(f"{i}: {arg}")
