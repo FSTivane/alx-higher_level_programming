@@ -2,6 +2,7 @@
 
 import importlib.util
 
+
 def print_names_from_pyc(pyc_file):
     spec = importlib.util.spec_from_file_location("hidden_4", pyc_file)
     module = importlib.util.module_from_spec(spec)
@@ -14,6 +15,6 @@ def print_names_from_pyc(pyc_file):
     for name in sorted(names):
         print(name)
 
+
 if __name__ == "__main__":
     print_names_from_pyc('hidden_4.pyc')
-
